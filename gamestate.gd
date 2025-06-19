@@ -1,7 +1,7 @@
 extends Node
 
 # Default game port
-const DEFAULT_PORT = 56565
+var network_port = 56565
 
 # Max number of players
 const MAX_PLAYERS = 12
@@ -15,10 +15,11 @@ var obj_id = 0
 var game_name = 1000
 
 
-func _ready():
+func begin_serving(port):
 	get_tree().connect("network_peer_connected", self, "_player_connected")
 	get_tree().connect("network_peer_disconnected", self,"_player_disconnected")
 	
+	network_port = port
 	create_server()
 
 
@@ -32,7 +33,7 @@ func _process(delta):
 
 func create_server():
 	var host = NetworkedMultiplayerENet.new()
-	host.create_server(DEFAULT_PORT, MAX_PLAYERS)
+	host.create_server(network_port, MAX_PLAYERS)
 	get_tree().set_network_peer(host)
 
 

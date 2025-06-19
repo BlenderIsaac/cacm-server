@@ -1,5 +1,11 @@
 extends Node2D
 
+func _ready():
+	$CanvasLayer/VBoxContainer/HBoxContainer/Begin.connect("pressed", self, "begin")
+
+func begin():
+	gamestate.begin_serving(int($CanvasLayer/VBoxContainer/HBoxContainer/Port.text))
+	$CanvasLayer/VBoxContainer/HBoxContainer.hide()
 
 remote func fire_nuke(pos, game):
 	var boomboom = load("res://Effects/SuperWeapon.tscn").instance()
@@ -42,7 +48,6 @@ remote func create_unit(pos, type, faction, game, check_max=false):
 				rpc_id(player, "spawn_unit", unit.position, type, unit.name, unit.max_health, unit.health, unit.faction)
 
 
-
 remote func create_building(pos, type, faction, game):
 	
 	# spawn the building on the server
@@ -60,7 +65,6 @@ remote func create_building(pos, type, faction, game):
 	for player in gamestate.players.keys():
 		if gamestate.players.get(player)[1] == game:
 			rpc_id(player, "spawn_building", building.position, type, building.name, building.max_health, building.health, building.faction, building.repairing)
-
 
 
 remote func spawn_unit(spawn_pos, type, id, game, max_health, health, faction):
@@ -106,4 +110,4 @@ func _process(delta):
 	for player in gamestate.players_in_lobbies.keys():
 		txt += str(player) + ", " + str(gamestate.players_in_lobbies.get(player)) + "\n"
 	
-	$CanvasLayer/Control/Label.text = txt
+	$CanvasLayer/VBoxContainer/Control/Label.text = txt
