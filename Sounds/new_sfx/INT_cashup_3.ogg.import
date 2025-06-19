@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/INT_cashup_3.ogg-dbdbaa4f846aa6edafc6b26729189529.oggstr"
+
+[deps]
+
+source_file="res://Sounds/new_sfx/INT_cashup_3.ogg"
+dest_files=[ "res://.import/INT_cashup_3.ogg-dbdbaa4f846aa6edafc6b26729189529.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

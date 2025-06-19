@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UA_good_pain_2.ogg-cd31b5008e17b23d9e64b7007cadbd9e.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UA_good_pain_2.ogg"
+dest_files=[ "res://.import/UA_good_pain_2.ogg-cd31b5008e17b23d9e64b7007cadbd9e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

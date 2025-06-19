@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UG_good_action_3.ogg-1bb59a69079aca3c5dad2e8d2a52b9da.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UG_good_action_3.ogg"
+dest_files=[ "res://.import/UG_good_action_3.ogg-1bb59a69079aca3c5dad2e8d2a52b9da.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/INT_constructioncomplete_building.ogg-31171cc865018bf71eec1d1d2f7f13dd.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/INT_constructioncomplete_building.ogg"
+dest_files=[ "res://.import/INT_constructioncomplete_building.ogg-31171cc865018bf71eec1d1d2f7f13dd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

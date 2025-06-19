@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/whitepx.png" type="Texture" id=1]
+
+[node name="Blip" type="Sprite"]
+scale = Vector2( 30, 30 )
+texture = ExtResource( 1 )

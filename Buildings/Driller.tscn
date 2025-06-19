@@ -1,0 +1,221 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://Buildings/Building.gd" type="Script" id=1]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_00.png" type="Texture" id=2]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_01.png" type="Texture" id=3]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_03.png" type="Texture" id=4]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_05.png" type="Texture" id=5]
+[ext_resource path="res://Textures/buildings/baseplate_astro_2.png" type="Texture" id=6]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_shadow_03.png" type="Texture" id=7]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_shadow_00.png" type="Texture" id=8]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_shadow_02.png" type="Texture" id=9]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_shadow_01.png" type="Texture" id=10]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_02.png" type="Texture" id=11]
+[ext_resource path="res://Textures/buildings/BL_good/BL_good_04.png" type="Texture" id=12]
+[ext_resource path="res://Effects/Flash.tres" type="Material" id=16]
+[ext_resource path="res://Textures/weapons/smoke.png" type="Texture" id=17]
+[ext_resource path="res://Textures/hud/cursors/repairing5.png" type="Texture" id=18]
+[ext_resource path="res://Textures/hud/cursors/repairing1.png" type="Texture" id=19]
+[ext_resource path="res://Textures/hud/cursors/repairing4.png" type="Texture" id=20]
+[ext_resource path="res://Textures/hud/cursors/repairing2.png" type="Texture" id=21]
+[ext_resource path="res://Textures/hud/cursors/repairing3.png" type="Texture" id=22]
+[ext_resource path="res://Resources/Font.tres" type="DynamicFont" id=35]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Broken",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+}, {
+"frames": [ null, ExtResource( 10 ), ExtResource( 9 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Build",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Broken",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+}, {
+"frames": [ null, ExtResource( 3 ), ExtResource( 11 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Build",
+"speed": 5.0
+} ]
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.274678, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0234375, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=6]
+curve = SubResource( 5 )
+
+[sub_resource type="ParticlesMaterial" id=7]
+emission_shape = 1
+emission_sphere_radius = 14.18
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 59.85
+angular_velocity = -95.29
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.2
+scale_random = 0.29
+scale_curve = SubResource( 6 )
+color_ramp = SubResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 41.0488
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 17.0
+} ]
+
+[node name="Driller" type="StaticBody2D" groups=[
+"Building",
+"Selectable",
+]]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource( 1 )
+type = "Driller"
+reinforcements = PoolStringArray( "Infantry", "Engineer" )
+offset = Vector2( 0.5, 0.5 )
+max_health = 3000.0
+
+[node name="Base" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.658824 )
+position = Vector2( 0, 24 )
+z_index = -1
+texture = ExtResource( 6 )
+
+[node name="Shadow" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0.52549 )
+frames = SubResource( 1 )
+animation = "Idle"
+playing = true
+
+[node name="Texture" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Idle"
+frame = 4
+playing = true
+
+[node name="Flash" type="AnimatedSprite" parent="Texture"]
+visible = false
+material = ExtResource( 16 )
+frames = SubResource( 2 )
+animation = "Idle"
+frame = 4
+playing = true
+
+[node name="Smoke" type="Particles2D" parent="Texture"]
+scale = Vector2( 1.7, 1.7 )
+emitting = false
+amount = 16
+lifetime = 0.5
+fixed_fps = 60
+process_material = SubResource( 7 )
+texture = ExtResource( 17 )
+
+[node name="HUD" type="Node2D" parent="Texture"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, -24 )
+
+[node name="Health" type="ProgressBar" parent="Texture/HUD"]
+margin_left = -51.0
+margin_top = -53.0
+margin_right = 52.0
+margin_bottom = -44.0
+custom_styles/fg = SubResource( 8 )
+custom_styles/bg = SubResource( 9 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Texture/HUD"]
+margin_left = -84.2887
+margin_top = -47.2522
+margin_right = 127.711
+margin_bottom = -24.2522
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 35 )
+text = "MT-201 Driller"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 10 )
+
+[node name="HurtFlash" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="repair_anim" type="AnimatedSprite" parent="."]
+visible = false
+frames = SubResource( 11 )
+frame = 6
+playing = true
+
+[node name="repair_time" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="repair_time" to="." method="repair"]

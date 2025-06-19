@@ -1,0 +1,40 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Textures/hud/cursors/pulse10.png" type="Texture" id=1]
+[ext_resource path="res://Textures/hud/cursors/pulse9.png" type="Texture" id=2]
+[ext_resource path="res://Textures/hud/cursors/pulse8.png" type="Texture" id=3]
+[ext_resource path="res://Textures/hud/cursors/pulse4.png" type="Texture" id=4]
+[ext_resource path="res://Textures/hud/cursors/pulse5.png" type="Texture" id=5]
+[ext_resource path="res://Textures/hud/cursors/pulse6.png" type="Texture" id=6]
+[ext_resource path="res://Textures/hud/cursors/pulse1.png" type="Texture" id=7]
+[ext_resource path="res://Textures/hud/cursors/pulse3.png" type="Texture" id=8]
+[ext_resource path="res://Textures/hud/cursors/pulse2.png" type="Texture" id=9]
+[ext_resource path="res://Textures/hud/cursors/pulse7.png" type="Texture" id=10]
+[ext_resource path="res://Effects/Pulse.gd" type="Script" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), null ],
+"loop": false,
+"name": "pulse",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ null, null, null, null, null, null, ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), null, null, null, null, null, null ],
+"loop": false,
+"name": "pulse",
+"speed": 30.0
+} ]
+
+[node name="Pulse" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="anim1" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "pulse"
+
+[node name="anim2" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "pulse"

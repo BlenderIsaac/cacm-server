@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UD_evil_pain_1.ogg-f46bb0a05b01938c6347c29920fc13cf.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UD_evil_pain_1.ogg"
+dest_files=[ "res://.import/UD_evil_pain_1.ogg-f46bb0a05b01938c6347c29920fc13cf.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

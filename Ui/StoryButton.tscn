@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Resources/NissanOpti.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Textures/splash/arra_off.png" type="Texture" id=2]
+[ext_resource path="res://Textures/splash/arra_on.png" type="Texture" id=3]
+[ext_resource path="res://Ui/StoryButton.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "Pulse"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("arra_off:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 1, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("arra_off2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 1, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Button" type="Button"]
+margin_right = 134.0
+margin_bottom = 24.0
+disabled = true
+enabled_focus_mode = 0
+flat = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arra_on" type="Sprite" parent="."]
+position = Vector2( 126, 12 )
+texture = ExtResource( 2 )
+
+[node name="arra_off" type="Sprite" parent="."]
+position = Vector2( 126, 12 )
+texture = ExtResource( 3 )
+
+[node name="arra_on2" type="Sprite" parent="."]
+position = Vector2( 8, 12 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+
+[node name="arra_off2" type="Sprite" parent="."]
+position = Vector2( 8, 12 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 3 )
+
+[node name="Text" type="Label" parent="."]
+margin_left = 28.0
+margin_right = 108.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/line_spacing = -3
+text = "Start
+Story"
+align = 2
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Flash" type="AnimationPlayer" parent="."]
+anims/Pulse = SubResource( 2 )

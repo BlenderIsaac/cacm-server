@@ -1,0 +1,197 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_15.png" type="Texture" id=1]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_10.png" type="Texture" id=2]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_12.png" type="Texture" id=3]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_11.png" type="Texture" id=4]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_14.png" type="Texture" id=5]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_13.png" type="Texture" id=6]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_04.png" type="Texture" id=7]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_07.png" type="Texture" id=8]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_08.png" type="Texture" id=9]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_09.png" type="Texture" id=10]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_05.png" type="Texture" id=11]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_06.png" type="Texture" id=12]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_01.png" type="Texture" id=13]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_00.png" type="Texture" id=14]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_02.png" type="Texture" id=15]
+[ext_resource path="res://Textures/units/UF_good/UF_good_straight_03.png" type="Texture" id=16]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_11.png" type="Texture" id=17]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_08.png" type="Texture" id=18]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_10.png" type="Texture" id=19]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_01.png" type="Texture" id=20]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_00.png" type="Texture" id=21]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_04.png" type="Texture" id=22]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_05.png" type="Texture" id=23]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_15.png" type="Texture" id=24]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_13.png" type="Texture" id=25]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_07.png" type="Texture" id=26]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_14.png" type="Texture" id=27]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_02.png" type="Texture" id=28]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_06.png" type="Texture" id=29]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_09.png" type="Texture" id=30]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_12.png" type="Texture" id=31]
+[ext_resource path="res://Textures/units/UF_good/UF_good_shadow_03.png" type="Texture" id=32]
+[ext_resource path="res://Units/Unit.gd" type="Script" id=33]
+[ext_resource path="res://Textures/weapons/smoke.png" type="Texture" id=34]
+[ext_resource path="res://Effects/Flash.tres" type="Material" id=36]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 25.2444
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 20 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 18 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 31 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 18 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 31 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "straight",
+"speed": 0.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "straight",
+"speed": 0.0
+} ]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.274678, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="Curve" id=6]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0234375, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=7]
+curve = SubResource( 6 )
+
+[sub_resource type="ParticlesMaterial" id=8]
+emission_shape = 1
+emission_sphere_radius = 14.18
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 59.85
+angular_velocity = -95.29
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.2
+scale_random = 0.29
+scale_curve = SubResource( 7 )
+color_ramp = SubResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[node name="ClawTank" type="StaticBody2D" groups=["Astro", "Selectable", "Unit"]]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource( 33 )
+type = "ClawTank"
+max_health = 800
+speed = 1.5
+bounces = true
+bullet_sound = "UF_good_action_"
+move_sound = "UF_good_comply"
+damage_sound = "UF_good_pain_"
+death_sound = "UF_good_die"
+fire_rate = 0.35
+hit_flyers = true
+
+[node name="Col" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Shadow" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0.52549 )
+frames = SubResource( 2 )
+animation = "straight"
+offset = Vector2( 0, 11 )
+
+[node name="target" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 0, 0, 0 )
+width = 0.5
+default_color = Color( 0, 0, 0, 0.25098 )
+antialiased = true
+
+[node name="Texture" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+animation = "straight"
+offset = Vector2( 0, 11 )
+
+[node name="Flash" type="AnimatedSprite" parent="Texture"]
+visible = false
+material = ExtResource( 36 )
+frames = SubResource( 3 )
+animation = "straight"
+offset = Vector2( 0, 11 )
+
+[node name="Smoke" type="Particles2D" parent="Texture"]
+position = Vector2( 0, 7.25819 )
+emitting = false
+amount = 16
+lifetime = 0.5
+fixed_fps = 60
+process_material = SubResource( 8 )
+texture = ExtResource( 34 )
+
+[node name="HUD" type="Node2D" parent="Texture"]
+modulate = Color( 1, 1, 1, 0 )
+z_index = 2
+
+[node name="Health" type="ProgressBar" parent="Texture/HUD"]
+margin_left = -12.0
+margin_top = -38.0
+margin_right = 12.0
+margin_bottom = -29.0
+custom_styles/fg = SubResource( 9 )
+custom_styles/bg = SubResource( 10 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+visible = false
+width = 3.0
+default_color = Color( 1, 0, 0, 1 )
+
+[node name="FireRate" type="Timer" parent="."]
+one_shot = true
+
+[node name="HurtFlash" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="Move" type="AudioStreamPlayer2D" parent="."]
+max_distance = 900.0
+
+[connection signal="timeout" from="FireRate" to="." method="_on_FireRate_timeout"]
+[connection signal="timeout" from="HurtFlash" to="." method="end_flash"]

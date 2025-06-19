@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UB_evil_action.ogg-4b5c3e9e92e3f649472ecff1251bcc40.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UB_evil_action.ogg"
+dest_files=[ "res://.import/UB_evil_action.ogg-4b5c3e9e92e3f649472ecff1251bcc40.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

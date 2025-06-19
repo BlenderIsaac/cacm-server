@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/INT_cursor_drag.ogg-9c4aaa474fe0dbce2c950982b52533b3.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/INT_cursor_drag.ogg"
+dest_files=[ "res://.import/INT_cursor_drag.ogg-9c4aaa474fe0dbce2c950982b52533b3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

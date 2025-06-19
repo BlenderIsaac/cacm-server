@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UC_good_pain_1.ogg-2222bcb86a7b3f3d586c88f390d96387.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UC_good_pain_1.ogg"
+dest_files=[ "res://.import/UC_good_pain_1.ogg-2222bcb86a7b3f3d586c88f390d96387.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

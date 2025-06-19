@@ -1,0 +1,404 @@
+[gd_scene load_steps=144 format=2]
+
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_07.png" type="Texture" id=1]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_04.png" type="Texture" id=2]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_08.png" type="Texture" id=3]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_10.png" type="Texture" id=4]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_06.png" type="Texture" id=5]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_07.png" type="Texture" id=6]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_11.png" type="Texture" id=7]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_02.png" type="Texture" id=8]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_15.png" type="Texture" id=9]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_14.png" type="Texture" id=10]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_09.png" type="Texture" id=11]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_09.png" type="Texture" id=12]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_08.png" type="Texture" id=13]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_01.png" type="Texture" id=14]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_03.png" type="Texture" id=15]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_12.png" type="Texture" id=16]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_13.png" type="Texture" id=17]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_05.png" type="Texture" id=18]
+[ext_resource path="res://Textures/units/UP_good/UP_good_ground_00.png" type="Texture" id=19]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_11.png" type="Texture" id=20]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_00.png" type="Texture" id=21]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_09.png" type="Texture" id=22]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_13.png" type="Texture" id=23]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_01.png" type="Texture" id=24]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_03.png" type="Texture" id=25]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_04.png" type="Texture" id=26]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_12.png" type="Texture" id=27]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_08.png" type="Texture" id=28]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_06.png" type="Texture" id=29]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_05.png" type="Texture" id=30]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_14.png" type="Texture" id=31]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_15.png" type="Texture" id=32]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_02.png" type="Texture" id=33]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_07.png" type="Texture" id=34]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_13.png" type="Texture" id=35]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_04.png" type="Texture" id=36]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_10.png" type="Texture" id=37]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_10.png" type="Texture" id=38]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_11.png" type="Texture" id=39]
+[ext_resource path="res://Textures/units/UP_good/UP_good_landing_12.png" type="Texture" id=40]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_15.png" type="Texture" id=41]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_12.png" type="Texture" id=42]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_14.png" type="Texture" id=43]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_01.png" type="Texture" id=44]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_15.png" type="Texture" id=45]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_14.png" type="Texture" id=46]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_00.png" type="Texture" id=47]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_07.png" type="Texture" id=48]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_01.png" type="Texture" id=49]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_02.png" type="Texture" id=50]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_05.png" type="Texture" id=51]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_08.png" type="Texture" id=52]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_03.png" type="Texture" id=53]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_00.png" type="Texture" id=54]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_02.png" type="Texture" id=55]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_03.png" type="Texture" id=56]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_04.png" type="Texture" id=57]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_05.png" type="Texture" id=58]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_09.png" type="Texture" id=59]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_10.png" type="Texture" id=60]
+[ext_resource path="res://Units/Switcher.gd" type="Script" id=61]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_06.png" type="Texture" id=62]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_06.png" type="Texture" id=63]
+[ext_resource path="res://Effects/Flash.tres" type="Material" id=64]
+[ext_resource path="res://Textures/units/astro_beam.png" type="Texture" id=65]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_11.png" type="Texture" id=66]
+[ext_resource path="res://Textures/weapons/smoke.png" type="Texture" id=67]
+[ext_resource path="res://Textures/units/UP_good/UP_good_left_13.png" type="Texture" id=68]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_02.png" type="Texture" id=69]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_03.png" type="Texture" id=70]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_04.png" type="Texture" id=71]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_00.png" type="Texture" id=72]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_01.png" type="Texture" id=73]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_05.png" type="Texture" id=74]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_07.png" type="Texture" id=75]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_06.png" type="Texture" id=76]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_08.png" type="Texture" id=77]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_10.png" type="Texture" id=78]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_14.png" type="Texture" id=79]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_12.png" type="Texture" id=80]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_09.png" type="Texture" id=81]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_11.png" type="Texture" id=82]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_13.png" type="Texture" id=83]
+[ext_resource path="res://Textures/units/UP_good/UP_good_right_15.png" type="Texture" id=84]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_02.png" type="Texture" id=85]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_04.png" type="Texture" id=86]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_09.png" type="Texture" id=87]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_01.png" type="Texture" id=88]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_06.png" type="Texture" id=89]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_05.png" type="Texture" id=90]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_15.png" type="Texture" id=91]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_11.png" type="Texture" id=92]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_07.png" type="Texture" id=93]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_12.png" type="Texture" id=94]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_13.png" type="Texture" id=95]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_10.png" type="Texture" id=96]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_03.png" type="Texture" id=97]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_14.png" type="Texture" id=98]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_08.png" type="Texture" id=99]
+[ext_resource path="res://Textures/units/UP_good/UP_good_straight_00.png" type="Texture" id=100]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_04.png" type="Texture" id=101]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_01.png" type="Texture" id=102]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_02.png" type="Texture" id=103]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_00.png" type="Texture" id=104]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_03.png" type="Texture" id=105]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_05.png" type="Texture" id=106]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_06.png" type="Texture" id=107]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_07.png" type="Texture" id=108]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_08.png" type="Texture" id=109]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_15.png" type="Texture" id=110]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_11.png" type="Texture" id=111]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_10.png" type="Texture" id=112]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_13.png" type="Texture" id=113]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_09.png" type="Texture" id=114]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_12.png" type="Texture" id=115]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_ground_14.png" type="Texture" id=116]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_01.png" type="Texture" id=117]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_02.png" type="Texture" id=118]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_03.png" type="Texture" id=119]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_04.png" type="Texture" id=120]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_00.png" type="Texture" id=121]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_08.png" type="Texture" id=122]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_06.png" type="Texture" id=123]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_13.png" type="Texture" id=124]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_10.png" type="Texture" id=125]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_09.png" type="Texture" id=126]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_15.png" type="Texture" id=127]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_05.png" type="Texture" id=128]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_12.png" type="Texture" id=129]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_07.png" type="Texture" id=130]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_14.png" type="Texture" id=131]
+[ext_resource path="res://Textures/units/UP_good/UP_good_shadow_landing_11.png" type="Texture" id=132]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 20.1229
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 104 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 105 ), ExtResource( 101 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 111 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 110 ), ExtResource( 104 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 105 ), ExtResource( 101 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 111 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 110 ) ],
+"loop": true,
+"name": "straight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 53 ), ExtResource( 36 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 37 ), ExtResource( 20 ), ExtResource( 27 ), ExtResource( 35 ), ExtResource( 46 ), ExtResource( 41 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 53 ), ExtResource( 36 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 37 ), ExtResource( 20 ), ExtResource( 27 ), ExtResource( 35 ), ExtResource( 46 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 121 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 128 ), ExtResource( 123 ), ExtResource( 130 ), ExtResource( 122 ), ExtResource( 126 ), ExtResource( 125 ), ExtResource( 132 ), ExtResource( 129 ), ExtResource( 124 ), ExtResource( 131 ), ExtResource( 127 ), ExtResource( 121 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 128 ), ExtResource( 123 ), ExtResource( 130 ), ExtResource( 122 ), ExtResource( 126 ), ExtResource( 125 ), ExtResource( 132 ), ExtResource( 129 ), ExtResource( 124 ), ExtResource( 131 ), ExtResource( 127 ) ],
+"loop": true,
+"name": "land",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 54 ), ExtResource( 44 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 63 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 66 ), ExtResource( 42 ), ExtResource( 68 ), ExtResource( 43 ), ExtResource( 45 ), ExtResource( 54 ), ExtResource( 44 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 63 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 66 ), ExtResource( 42 ), ExtResource( 68 ), ExtResource( 43 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 73 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ), ExtResource( 77 ), ExtResource( 81 ), ExtResource( 78 ), ExtResource( 82 ), ExtResource( 80 ), ExtResource( 83 ), ExtResource( 79 ), ExtResource( 84 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ), ExtResource( 77 ), ExtResource( 81 ), ExtResource( 78 ), ExtResource( 82 ), ExtResource( 80 ), ExtResource( 83 ), ExtResource( 79 ), ExtResource( 84 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 14 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 19 ), ExtResource( 14 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "straight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 100 ), ExtResource( 88 ), ExtResource( 85 ), ExtResource( 97 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 89 ), ExtResource( 93 ), ExtResource( 99 ), ExtResource( 87 ), ExtResource( 96 ), ExtResource( 92 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 98 ), ExtResource( 91 ), ExtResource( 100 ), ExtResource( 88 ), ExtResource( 85 ), ExtResource( 97 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 89 ), ExtResource( 93 ), ExtResource( 99 ), ExtResource( 87 ), ExtResource( 96 ), ExtResource( 92 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 98 ), ExtResource( 91 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 24 ), ExtResource( 33 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 34 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 23 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 33 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 34 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 23 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "land",
+"speed": 5.0
+} ]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.274678, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="Curve" id=6]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0234375, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=7]
+curve = SubResource( 6 )
+
+[sub_resource type="ParticlesMaterial" id=8]
+emission_shape = 1
+emission_sphere_radius = 14.18
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 59.85
+angular_velocity = -95.29
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.2
+scale_random = 0.29
+scale_curve = SubResource( 7 )
+color_ramp = SubResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="Animation" id=12]
+resource_name = "flying"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -85 ), Vector2( 0, -2 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Texture:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Shadow:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Texture/Light:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="SwitchFighter" type="StaticBody2D" groups=[
+"Astro",
+"Selectable",
+"Unit",
+]]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource( 61 )
+__meta__ = {
+"_editor_description_": ""
+}
+type = "SwitchFighter"
+max_health = 400
+speed = 3.25
+spread = 4
+turn = true
+bullet_sound = "UE_good_action"
+move_sound = "UE_good_comply"
+damage_sound = "UE_good_pain_"
+death_sound = "UE_good_die"
+fire_rate = 0.7
+hit_flyers = true
+
+[node name="Col" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -85 )
+shape = SubResource( 1 )
+
+[node name="Shadow" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0.52549 )
+frames = SubResource( 2 )
+animation = "straight"
+frame = 12
+
+[node name="target" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 0, 0, 0 )
+width = 0.5
+default_color = Color( 0, 0, 0, 0.25098 )
+antialiased = true
+
+[node name="Texture" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -85 )
+frames = SubResource( 3 )
+animation = "straight"
+frame = 12
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Light" type="Sprite" parent="Texture"]
+show_behind_parent = true
+position = Vector2( 0, 26.37 )
+scale = Vector2( 0.88239, 0.88239 )
+texture = ExtResource( 65 )
+
+[node name="Flash" type="AnimatedSprite" parent="Texture"]
+visible = false
+material = ExtResource( 64 )
+z_index = 1
+frames = SubResource( 3 )
+animation = "fly"
+offset = Vector2( 0, 11 )
+
+[node name="Smoke" type="Particles2D" parent="Texture"]
+emitting = false
+amount = 16
+lifetime = 0.5
+fixed_fps = 60
+process_material = SubResource( 8 )
+texture = ExtResource( 67 )
+
+[node name="HUD" type="Node2D" parent="Texture"]
+modulate = Color( 1, 1, 1, 0 )
+z_index = 2
+
+[node name="Health" type="ProgressBar" parent="Texture/HUD"]
+margin_left = -12.0
+margin_top = -42.4327
+margin_right = 12.0
+margin_bottom = -33.4327
+custom_styles/fg = SubResource( 9 )
+custom_styles/bg = SubResource( 10 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+visible = false
+width = 3.0
+default_color = Color( 1, 0, 0, 1 )
+
+[node name="FireRate" type="Timer" parent="."]
+one_shot = true
+
+[node name="HurtFlash" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="TurnCooldown" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="updown" type="AnimationPlayer" parent="."]
+anims/flying = SubResource( 12 )
+
+[node name="Move" type="AudioStreamPlayer2D" parent="."]
+max_distance = 900.0
+
+[node name="total_rot" type="Position2D" parent="."]
+
+[connection signal="timeout" from="FireRate" to="." method="_on_FireRate_timeout"]
+[connection signal="timeout" from="HurtFlash" to="." method="end_flash"]
+[connection signal="timeout" from="TurnCooldown" to="." method="back2straight"]

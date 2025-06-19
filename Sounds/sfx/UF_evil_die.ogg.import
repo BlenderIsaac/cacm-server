@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UF_evil_die.ogg-1b1cd3078402dcea6854b01be1c5c83f.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UF_evil_die.ogg"
+dest_files=[ "res://.import/UF_evil_die.ogg-1b1cd3078402dcea6854b01be1c5c83f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/INT_guntower_3.ogg-55fdf694c33d8a7eafec5bb57caa8f42.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/INT_guntower_3.ogg"
+dest_files=[ "res://.import/INT_guntower_3.ogg-55fdf694c33d8a7eafec5bb57caa8f42.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UH_evil_comply.ogg-0e432a6c6ee44dd76b3c92c6f5c2675d.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UH_evil_comply.ogg"
+dest_files=[ "res://.import/UH_evil_comply.ogg-0e432a6c6ee44dd76b3c92c6f5c2675d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

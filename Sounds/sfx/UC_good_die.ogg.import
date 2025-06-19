@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UC_good_die.ogg-29d14d38cd630b1a943c5fe9643cf4f4.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/UC_good_die.ogg"
+dest_files=[ "res://.import/UC_good_die.ogg-29d14d38cd630b1a943c5fe9643cf4f4.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

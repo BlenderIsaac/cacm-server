@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Effects/Nuker.gd" type="Script" id=1]
+[ext_resource path="res://Effects/SuperWeapon.tscn" type="PackedScene" id=2]
+
+[node name="Nuker" type="Node2D"]
+script = ExtResource( 1 )
+nuke = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

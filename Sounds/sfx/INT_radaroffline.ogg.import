@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/INT_radaroffline.ogg-0685467e6d60403c97f5fca682f69ffa.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sfx/INT_radaroffline.ogg"
+dest_files=[ "res://.import/INT_radaroffline.ogg-0685467e6d60403c97f5fca682f69ffa.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

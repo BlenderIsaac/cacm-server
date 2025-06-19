@@ -1,0 +1,76 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Textures/weapons/explosion/explosion_01.png" type="Texture" id=1]
+[ext_resource path="res://Textures/weapons/explosion/explosion_06.png" type="Texture" id=2]
+[ext_resource path="res://Textures/weapons/explosion/explosion_08.png" type="Texture" id=3]
+[ext_resource path="res://Textures/weapons/explosion/explosion_09.png" type="Texture" id=4]
+[ext_resource path="res://Textures/weapons/explosion/explosion_07.png" type="Texture" id=5]
+[ext_resource path="res://Textures/weapons/explosion/explosion_10.png" type="Texture" id=6]
+[ext_resource path="res://Textures/weapons/explosion/explosion_02.png" type="Texture" id=7]
+[ext_resource path="res://Textures/weapons/explosion/explosion_05.png" type="Texture" id=8]
+[ext_resource path="res://Textures/weapons/explosion/explosion_03.png" type="Texture" id=9]
+[ext_resource path="res://Textures/weapons/explosion/explosion_04.png" type="Texture" id=10]
+[ext_resource path="res://Effects/BOOM.gd" type="Script" id=11]
+[ext_resource path="res://Effects/scorch.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Textures/weapons/pulse.png" type="Texture" id=13]
+[ext_resource path="res://Sounds/sfx/UD_good_die.ogg" type="AudioStream" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ null, null, null, null, null, null, null, null, null, null, null ],
+"loop": true,
+"name": "none",
+"speed": 23.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ), null ],
+"loop": false,
+"name": "Explosion",
+"speed": 23.0
+} ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "puff"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("pulse:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -25.6326 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("pulse:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="BOOM" type="AnimatedSprite"]
+frames = SubResource( 1 )
+animation = "Explosion"
+script = ExtResource( 11 )
+scorch = ExtResource( 12 )
+
+[node name="pulse" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 13 )
+
+[node name="DeathDoomDestruction" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 14 )
+max_distance = 4000.0
+
+[node name="puff" type="AnimationPlayer" parent="."]
+autoplay = "puff"
+anims/puff = SubResource( 2 )
+[connection signal="finished" from="DeathDoomDestruction" to="." method="_on_DeathDoomDestruction_finished"]

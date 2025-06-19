@@ -1,0 +1,271 @@
+[gd_scene load_steps=80 format=2]
+
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_00.png" type="Texture" id=1]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_03.png" type="Texture" id=2]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_04.png" type="Texture" id=3]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_01.png" type="Texture" id=4]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_02.png" type="Texture" id=5]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_01.png" type="Texture" id=6]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_00.png" type="Texture" id=7]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_03.png" type="Texture" id=8]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_02.png" type="Texture" id=9]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_09.png" type="Texture" id=10]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_11.png" type="Texture" id=11]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_14.png" type="Texture" id=12]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_14.png" type="Texture" id=13]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_01.png" type="Texture" id=14]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_07.png" type="Texture" id=15]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_11.png" type="Texture" id=16]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_09.png" type="Texture" id=17]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_11.png" type="Texture" id=18]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_02.png" type="Texture" id=19]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_00.png" type="Texture" id=20]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_08.png" type="Texture" id=21]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_13.png" type="Texture" id=22]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_12.png" type="Texture" id=23]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_14.png" type="Texture" id=24]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_01.png" type="Texture" id=25]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_03.png" type="Texture" id=26]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_06.png" type="Texture" id=27]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_07.png" type="Texture" id=28]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_15.png" type="Texture" id=29]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_04.png" type="Texture" id=30]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_10.png" type="Texture" id=31]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_shadow_05.png" type="Texture" id=32]
+[ext_resource path="res://Units/Unit.gd" type="Script" id=33]
+[ext_resource path="res://Textures/weapons/astro_laser.png" type="Texture" id=34]
+[ext_resource path="res://Textures/weapons/pulse.png" type="Texture" id=35]
+[ext_resource path="res://Effects/Flash.tres" type="Material" id=36]
+[ext_resource path="res://Textures/weapons/smoke.png" type="Texture" id=37]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_07.png" type="Texture" id=38]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_10.png" type="Texture" id=39]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_14.png" type="Texture" id=40]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_13.png" type="Texture" id=41]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_04.png" type="Texture" id=42]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_11.png" type="Texture" id=43]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_15.png" type="Texture" id=44]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_06.png" type="Texture" id=45]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_06.png" type="Texture" id=46]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_15.png" type="Texture" id=47]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_12.png" type="Texture" id=48]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_05.png" type="Texture" id=49]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_09.png" type="Texture" id=50]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_07.png" type="Texture" id=51]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_09.png" type="Texture" id=52]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_12.png" type="Texture" id=53]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_03.png" type="Texture" id=54]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_13.png" type="Texture" id=55]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_06.png" type="Texture" id=56]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_00.png" type="Texture" id=57]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_13.png" type="Texture" id=58]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_08.png" type="Texture" id=59]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_04.png" type="Texture" id=60]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_08.png" type="Texture" id=61]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_12.png" type="Texture" id=62]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_05.png" type="Texture" id=63]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_05.png" type="Texture" id=64]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_08.png" type="Texture" id=65]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_10.png" type="Texture" id=66]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_straight_15.png" type="Texture" id=67]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_left_10.png" type="Texture" id=68]
+[ext_resource path="res://Textures/units/UB_evil/UB_evil_right_02.png" type="Texture" id=69]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.81827, 13.7563 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 20 ), ExtResource( 25 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 32 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 21 ), ExtResource( 17 ), ExtResource( 31 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 29 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 32 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 21 ), ExtResource( 17 ), ExtResource( 31 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "straight",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 64 ), ExtResource( 56 ), ExtResource( 15 ), ExtResource( 59 ), ExtResource( 50 ), ExtResource( 66 ), ExtResource( 43 ), ExtResource( 53 ), ExtResource( 58 ), ExtResource( 13 ), ExtResource( 67 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 64 ), ExtResource( 56 ), ExtResource( 15 ), ExtResource( 59 ), ExtResource( 50 ), ExtResource( 66 ), ExtResource( 43 ), ExtResource( 53 ), ExtResource( 58 ), ExtResource( 13 ), ExtResource( 67 ) ],
+"loop": true,
+"name": "straight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 14 ), ExtResource( 69 ), ExtResource( 54 ), ExtResource( 42 ), ExtResource( 63 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 65 ), ExtResource( 52 ), ExtResource( 39 ), ExtResource( 16 ), ExtResource( 48 ), ExtResource( 55 ), ExtResource( 40 ), ExtResource( 47 ), ExtResource( 7 ), ExtResource( 14 ), ExtResource( 69 ), ExtResource( 54 ), ExtResource( 42 ), ExtResource( 63 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 65 ), ExtResource( 52 ), ExtResource( 39 ), ExtResource( 16 ), ExtResource( 48 ), ExtResource( 55 ), ExtResource( 40 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "straightfront",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 57 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 60 ), ExtResource( 49 ), ExtResource( 46 ), ExtResource( 51 ), ExtResource( 61 ), ExtResource( 10 ), ExtResource( 68 ), ExtResource( 11 ), ExtResource( 62 ), ExtResource( 41 ), ExtResource( 12 ), ExtResource( 44 ), ExtResource( 57 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 60 ), ExtResource( 49 ), ExtResource( 46 ), ExtResource( 51 ), ExtResource( 61 ), ExtResource( 10 ), ExtResource( 68 ), ExtResource( 11 ), ExtResource( 62 ), ExtResource( 41 ), ExtResource( 12 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "straightback",
+"speed": 5.0
+} ]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.274678, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="Curve" id=6]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0234375, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=7]
+curve = SubResource( 6 )
+
+[sub_resource type="ParticlesMaterial" id=8]
+emission_shape = 1
+emission_sphere_radius = 14.18
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 59.85
+angular_velocity = -95.29
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.2
+scale_random = 0.29
+scale_curve = SubResource( 7 )
+color_ramp = SubResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[node name="Saboteur" type="StaticBody2D" groups=[
+"Astro",
+"Selectable",
+"Unit",
+]]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource( 33 )
+type = "Saboteur"
+max_health = 75
+speed = 0.9
+explosion_type = "puff"
+gun_type = "infiltrate"
+one_track_brain = true
+walking = true
+repairable = false
+faction = "alien"
+bullet_sound = "UB_evil_action_"
+move_sound = "UB_evil_comply"
+damage_sound = "UB_evil_pain_"
+death_sound = "UB_good_die"
+fire_rate = 0.1
+gun_range = 10
+ai_type = "seek"
+
+[node name="Col" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Shadow" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0.52549 )
+frames = SubResource( 2 )
+animation = "straight"
+offset = Vector2( 0, 11 )
+
+[node name="target" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 0, 0, 0 )
+width = 0.5
+default_color = Color( 0, 0, 0, 0.25098 )
+antialiased = true
+
+[node name="Texture" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+animation = "straight"
+offset = Vector2( 0, 11 )
+
+[node name="Flash" type="AnimatedSprite" parent="Texture"]
+visible = false
+material = ExtResource( 36 )
+frames = SubResource( 3 )
+animation = "straight"
+offset = Vector2( 0, 11 )
+
+[node name="Smoke" type="Particles2D" parent="Texture"]
+visible = false
+emitting = false
+amount = 16
+lifetime = 0.5
+fixed_fps = 60
+process_material = SubResource( 8 )
+texture = ExtResource( 37 )
+
+[node name="HUD" type="Node2D" parent="Texture"]
+modulate = Color( 1, 1, 1, 0 )
+z_index = 2
+
+[node name="Health" type="ProgressBar" parent="Texture/HUD"]
+margin_left = -11.8597
+margin_top = -27.4881
+margin_right = 12.1403
+margin_bottom = -18.4881
+custom_styles/fg = SubResource( 9 )
+custom_styles/bg = SubResource( 10 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+visible = false
+width = 3.0
+default_color = Color( 1, 0, 0, 1 )
+
+[node name="FireRate" type="Timer" parent="."]
+one_shot = true
+
+[node name="HurtFlash" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="WalkSpeed" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[node name="Laser" type="Line2D" parent="."]
+visible = false
+points = PoolVector2Array( 0, 0, 0, 0 )
+width = 12.0
+default_color = Color( 1, 1, 1, 1 )
+texture = ExtResource( 34 )
+texture_mode = 2
+
+[node name="Flash" type="Timer" parent="Laser"]
+wait_time = 0.1
+one_shot = true
+
+[node name="Sprite" type="Sprite" parent="Laser"]
+texture = ExtResource( 35 )
+
+[node name="Move" type="AudioStreamPlayer2D" parent="."]
+max_distance = 900.0
+[connection signal="timeout" from="FireRate" to="." method="_on_FireRate_timeout"]
+[connection signal="timeout" from="HurtFlash" to="." method="end_flash"]
+[connection signal="timeout" from="WalkSpeed" to="." method="_on_WalkSpeed_timeout"]
+[connection signal="timeout" from="Laser/Flash" to="." method="stop_laser"]

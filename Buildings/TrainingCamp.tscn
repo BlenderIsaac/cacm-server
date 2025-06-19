@@ -1,0 +1,252 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://Buildings/Building.gd" type="Script" id=1]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_03.png" type="Texture" id=2]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_shadow_03.png" type="Texture" id=3]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_04.png" type="Texture" id=4]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_05.png" type="Texture" id=5]
+[ext_resource path="res://Textures/buildings/baseplate_astro_2.png" type="Texture" id=6]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_06.png" type="Texture" id=7]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_shadow_00.png" type="Texture" id=8]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_00.png" type="Texture" id=9]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_02.png" type="Texture" id=10]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_01.png" type="Texture" id=11]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_shadow_02.png" type="Texture" id=12]
+[ext_resource path="res://Textures/buildings/BC_good/BC_good_shadow_01.png" type="Texture" id=13]
+[ext_resource path="res://Textures/weapons/smoke.png" type="Texture" id=14]
+[ext_resource path="res://Effects/Flash.tres" type="Material" id=15]
+[ext_resource path="res://Textures/hud/cursors/repairing1.png" type="Texture" id=16]
+[ext_resource path="res://Textures/hud/cursors/repairing2.png" type="Texture" id=17]
+[ext_resource path="res://Textures/hud/cursors/repairing4.png" type="Texture" id=18]
+[ext_resource path="res://Textures/hud/cursors/repairing5.png" type="Texture" id=19]
+[ext_resource path="res://Textures/hud/cursors/repairing3.png" type="Texture" id=20]
+[ext_resource path="res://Resources/Font.tres" type="DynamicFont" id=35]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Broken",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+}, {
+"frames": [ null, ExtResource( 13 ), ExtResource( 12 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Build",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Broken",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ null, ExtResource( 11 ), ExtResource( 10 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Build",
+"speed": 5.0
+} ]
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.274678, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0234375, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=6]
+curve = SubResource( 5 )
+
+[sub_resource type="ParticlesMaterial" id=7]
+emission_shape = 1
+emission_sphere_radius = 14.18
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 59.85
+angular_velocity = -95.29
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.2
+scale_random = 0.29
+scale_curve = SubResource( 6 )
+color_ramp = SubResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ null ],
+"loop": true,
+"name": "Broken",
+"speed": 5.0
+}, {
+"frames": [ null, ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 4 ), null, null, null, null ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ null, null, null, null ],
+"loop": true,
+"name": "Build",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=11]
+radius = 12.2729
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "default",
+"speed": 17.0
+} ]
+
+[node name="TrainingCamp" type="StaticBody2D" groups=[
+"Building",
+"Selectable",
+]]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource( 1 )
+type = "TrainingCamp"
+reinforcements = PoolStringArray( "Infantry" )
+offset = Vector2( 0.5, 0 )
+overlay = true
+max_health = 500.0
+
+[node name="Base" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.658824 )
+z_index = -1
+texture = ExtResource( 6 )
+
+[node name="Shadow" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0.52549 )
+frames = SubResource( 1 )
+animation = "Idle"
+playing = true
+
+[node name="Texture" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Idle"
+playing = true
+
+[node name="Flash" type="AnimatedSprite" parent="Texture"]
+visible = false
+material = ExtResource( 15 )
+frames = SubResource( 2 )
+animation = "Idle"
+playing = true
+
+[node name="Smoke" type="Particles2D" parent="Texture"]
+position = Vector2( 0, -24 )
+scale = Vector2( 1.1, 1.1 )
+emitting = false
+amount = 16
+lifetime = 0.5
+fixed_fps = 60
+process_material = SubResource( 7 )
+texture = ExtResource( 14 )
+
+[node name="HUD" type="Node2D" parent="Texture"]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="Health" type="ProgressBar" parent="Texture/HUD"]
+margin_left = -51.0
+margin_top = -53.0
+margin_right = 52.0
+margin_bottom = -44.0
+custom_styles/fg = SubResource( 8 )
+custom_styles/bg = SubResource( 9 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Texture/HUD"]
+margin_left = -84.2887
+margin_top = -47.2522
+margin_right = 127.711
+margin_bottom = -24.2522
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 35 )
+text = "Training Camp"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Overlay" type="AnimatedSprite" parent="."]
+frames = SubResource( 10 )
+animation = "Idle"
+frame = 8
+playing = true
+
+[node name="Flash" type="AnimatedSprite" parent="Overlay"]
+visible = false
+material = ExtResource( 15 )
+frames = SubResource( 10 )
+animation = "Idle"
+frame = 7
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 11 )
+
+[node name="HurtFlash" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="repair_anim" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 0, -25.25 )
+frames = SubResource( 12 )
+frame = 7
+playing = true
+
+[node name="repair_time" type="Timer" parent="."]
+wait_time = 0.5
+[connection signal="timeout" from="repair_time" to="." method="repair"]

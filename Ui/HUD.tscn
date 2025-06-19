@@ -1,0 +1,1010 @@
+[gd_scene load_steps=130 format=2]
+
+[ext_resource path="res://Sounds/sfx/INT_radaronline.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Ui/HUD.gd" type="Script" id=3]
+[ext_resource path="res://Ui/CursorAnim.gd" type="Script" id=4]
+[ext_resource path="res://Effects/ShroudTiles.tres" type="TileSet" id=6]
+[ext_resource path="res://Resources/NissanOpti.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://Ui/PauseUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Ui/MyButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Ui/Cursor.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Resources/Font.tres" type="DynamicFont" id=11]
+[ext_resource path="res://Textures/hud/hud.png" type="Texture" id=12]
+[ext_resource path="res://Textures/whitepx.png" type="Texture" id=13]
+[ext_resource path="res://Textures/hud/radar_stats_glow.png" type="Texture" id=14]
+[ext_resource path="res://Resources/RadarTilesBright.tres" type="TileSet" id=16]
+[ext_resource path="res://Textures/hud/cursors/standard.png" type="Texture" id=17]
+[ext_resource path="res://Textures/hud/cursors/sell4.png" type="Texture" id=18]
+[ext_resource path="res://Textures/hud/cursors/sell8.png" type="Texture" id=19]
+[ext_resource path="res://Textures/hud/cursors/sell1.png" type="Texture" id=20]
+[ext_resource path="res://Textures/hud/cursors/select4.png" type="Texture" id=21]
+[ext_resource path="res://Textures/hud/cursors/sell2.png" type="Texture" id=22]
+[ext_resource path="res://Textures/hud/cursors/select3.png" type="Texture" id=23]
+[ext_resource path="res://Textures/hud/cursors/select6.png" type="Texture" id=24]
+[ext_resource path="res://Textures/hud/cursors/sell7.png" type="Texture" id=25]
+[ext_resource path="res://Textures/hud/cursors/select8.png" type="Texture" id=26]
+[ext_resource path="res://Textures/hud/cursors/select5.png" type="Texture" id=27]
+[ext_resource path="res://Textures/hud/cursors/select2.png" type="Texture" id=28]
+[ext_resource path="res://Textures/hud/cursors/sell6.png" type="Texture" id=29]
+[ext_resource path="res://Textures/hud/cursors/select1.png" type="Texture" id=30]
+[ext_resource path="res://Textures/hud/cursors/sell3.png" type="Texture" id=31]
+[ext_resource path="res://Textures/hud/cursors/select7.png" type="Texture" id=32]
+[ext_resource path="res://Textures/hud/cursors/sell5.png" type="Texture" id=33]
+[ext_resource path="res://Textures/hud/cursors/infiltrate2.png" type="Texture" id=34]
+[ext_resource path="res://Textures/hud/cursors/deploy5.png" type="Texture" id=35]
+[ext_resource path="res://Textures/hud/cursors/infiltrate4.png" type="Texture" id=36]
+[ext_resource path="res://Textures/hud/cursors/infiltrate1.png" type="Texture" id=37]
+[ext_resource path="res://Textures/hud/cursors/superweapon1.png" type="Texture" id=38]
+[ext_resource path="res://Textures/hud/cursors/pulse6.png" type="Texture" id=39]
+[ext_resource path="res://Textures/hud/cursors/superweapon6.png" type="Texture" id=40]
+[ext_resource path="res://Textures/hud/cursors/target6.png" type="Texture" id=41]
+[ext_resource path="res://Textures/hud/cursors/pulse8.png" type="Texture" id=42]
+[ext_resource path="res://Textures/hud/cursors/repair1.png" type="Texture" id=43]
+[ext_resource path="res://Textures/hud/cursors/goto5.png" type="Texture" id=44]
+[ext_resource path="res://Textures/hud/cursors/target8.png" type="Texture" id=45]
+[ext_resource path="res://Textures/hud/cursors/goto6.png" type="Texture" id=46]
+[ext_resource path="res://Textures/hud/cursors/deploy3.png" type="Texture" id=47]
+[ext_resource path="res://Textures/hud/cursors/pulse9.png" type="Texture" id=48]
+[ext_resource path="res://Textures/hud/cursors/repair2.png" type="Texture" id=49]
+[ext_resource path="res://Textures/hud/cursors/goto3.png" type="Texture" id=50]
+[ext_resource path="res://Textures/hud/cursors/deploy4.png" type="Texture" id=51]
+[ext_resource path="res://Textures/hud/cursors/pulse10.png" type="Texture" id=52]
+[ext_resource path="res://Textures/hud/cursors/pulse5.png" type="Texture" id=53]
+[ext_resource path="res://Textures/hud/cursors/deploy2.png" type="Texture" id=54]
+[ext_resource path="res://Textures/hud/cursors/goto7.png" type="Texture" id=55]
+[ext_resource path="res://Textures/hud/cursors/deploy1.png" type="Texture" id=56]
+[ext_resource path="res://Textures/hud/cursors/goto.png" type="Texture" id=57]
+[ext_resource path="res://Textures/hud/cursors/pulse4.png" type="Texture" id=58]
+[ext_resource path="res://Textures/hud/cursors/target3.png" type="Texture" id=59]
+[ext_resource path="res://Textures/hud/cursors/goto8.png" type="Texture" id=60]
+[ext_resource path="res://Textures/hud/cursors/infiltrate5.png" type="Texture" id=61]
+[ext_resource path="res://Textures/hud/cursors/target7.png" type="Texture" id=62]
+[ext_resource path="res://Textures/hud/cursors/pulse3.png" type="Texture" id=63]
+[ext_resource path="res://Textures/hud/cursors/repair5.png" type="Texture" id=64]
+[ext_resource path="res://Textures/hud/cursors/target4.png" type="Texture" id=65]
+[ext_resource path="res://Textures/hud/cursors/pulse1.png" type="Texture" id=66]
+[ext_resource path="res://Textures/hud/cursors/pulse7.png" type="Texture" id=67]
+[ext_resource path="res://Textures/hud/cursors/target5.png" type="Texture" id=68]
+[ext_resource path="res://Textures/hud/cursors/superweapon4.png" type="Texture" id=69]
+[ext_resource path="res://Textures/hud/cursors/repair4.png" type="Texture" id=70]
+[ext_resource path="res://Textures/hud/cursors/goto2.png" type="Texture" id=71]
+[ext_resource path="res://Textures/hud/cursors/superweapon2.png" type="Texture" id=72]
+[ext_resource path="res://Textures/hud/cursors/target2.png" type="Texture" id=73]
+[ext_resource path="res://Textures/hud/cursors/goto1.png" type="Texture" id=74]
+[ext_resource path="res://Textures/hud/cursors/goto4.png" type="Texture" id=75]
+[ext_resource path="res://Textures/hud/cursors/repair3.png" type="Texture" id=76]
+[ext_resource path="res://Textures/hud/cursors/superweapon5.png" type="Texture" id=77]
+[ext_resource path="res://Textures/hud/cursors/target1.png" type="Texture" id=78]
+[ext_resource path="res://Textures/hud/cursors/pulse2.png" type="Texture" id=79]
+[ext_resource path="res://Textures/hud/cursors/infiltrate3.png" type="Texture" id=80]
+[ext_resource path="res://Textures/hud/cursors/superweapon3.png" type="Texture" id=81]
+[ext_resource path="res://Textures/hud/mugshots/BH_good.png" type="Texture" id=82]
+[ext_resource path="res://Textures/hud/mugshots/BD_good.png" type="Texture" id=83]
+[ext_resource path="res://Textures/hud/mugshots/BG_good.png" type="Texture" id=84]
+[ext_resource path="res://Textures/hud/mugshots/BB_good.png" type="Texture" id=85]
+[ext_resource path="res://Textures/hud/mugshots/BC_good.png" type="Texture" id=86]
+[ext_resource path="res://Textures/hud/mugshots/BF_good.png" type="Texture" id=87]
+[ext_resource path="res://Textures/hud/mugshots/UE_good.png" type="Texture" id=88]
+[ext_resource path="res://Textures/hud/mugshots/UH_good.png" type="Texture" id=89]
+[ext_resource path="res://Textures/hud/mugshots/UF_good.png" type="Texture" id=90]
+[ext_resource path="res://Textures/hud/radar_off.png" type="Texture" id=91]
+[ext_resource path="res://Textures/hud/hud_evil.png" type="Texture" id=92]
+[ext_resource path="res://Textures/hud/mugshots/UB_good.png" type="Texture" id=93]
+[ext_resource path="res://Textures/hud/mugshots/UD_good.png" type="Texture" id=94]
+[ext_resource path="res://Textures/hud/RadarTiles2.png" type="Texture" id=95]
+[ext_resource path="res://Textures/hud/mugshots/BB_evil.png" type="Texture" id=96]
+[ext_resource path="res://Textures/hud/mugshots/BE_good.png" type="Texture" id=97]
+[ext_resource path="res://Textures/hud/mugshots/UC_good.png" type="Texture" id=98]
+[ext_resource path="res://Textures/hud/mugshots/UG_good.png" type="Texture" id=99]
+[ext_resource path="res://Textures/hud/mugshots/UA_evil.png" type="Texture" id=100]
+[ext_resource path="res://Textures/hud/mugshots/UD_evil.png" type="Texture" id=101]
+[ext_resource path="res://Sounds/sfx/INT_powerwarning.ogg" type="AudioStream" id=102]
+[ext_resource path="res://Textures/hud/mugshots/UC_evil.png" type="Texture" id=103]
+[ext_resource path="res://Textures/hud/mugshots/BG_evil.png" type="Texture" id=104]
+[ext_resource path="res://Textures/hud/mugshots/BD_evil.png" type="Texture" id=105]
+[ext_resource path="res://Textures/hud/mugshots/UK_evil.png" type="Texture" id=106]
+[ext_resource path="res://Textures/hud/mugshots/UE_evil.png" type="Texture" id=107]
+[ext_resource path="res://Textures/hud/mugshots/BF_evil.png" type="Texture" id=108]
+[ext_resource path="res://Textures/hud/mugshots/UK_good.png" type="Texture" id=109]
+[ext_resource path="res://Textures/hud/mugshots/BC_evil.png" type="Texture" id=110]
+[ext_resource path="res://Textures/hud/CamBlip.png" type="Texture" id=111]
+[ext_resource path="res://Textures/hud/mugshots/UB_evil.png" type="Texture" id=112]
+[ext_resource path="res://Textures/hud/mugshots/UF_evil.png" type="Texture" id=113]
+[ext_resource path="res://Sounds/sfx/INT_radaroffline.ogg" type="AudioStream" id=114]
+[ext_resource path="res://Textures/hud/mugshots/BE_evil.png" type="Texture" id=115]
+[ext_resource path="res://Textures/hud/mugshots/UG_evil.png" type="Texture" id=116]
+[ext_resource path="res://Textures/hud/hud_scrolldown.png" type="Texture" id=117]
+[ext_resource path="res://Textures/hud/hud_scrollup.png" type="Texture" id=118]
+[ext_resource path="res://Textures/hud/mugshots/UH_evil.png" type="Texture" id=119]
+[ext_resource path="res://Textures/hud/mugshots/BH_evil.png" type="Texture" id=120]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 78 ), ExtResource( 73 ), ExtResource( 59 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 41 ), ExtResource( 62 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "target",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 28 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 27 ), ExtResource( 24 ), ExtResource( 32 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "select",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 72 ), ExtResource( 81 ), ExtResource( 69 ), ExtResource( 77 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "superweapon",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "standard",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 74 ), ExtResource( 71 ), ExtResource( 50 ), ExtResource( 75 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 55 ), ExtResource( 60 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "goto",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 34 ), ExtResource( 80 ), ExtResource( 36 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "infiltrate",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 79 ), ExtResource( 63 ), ExtResource( 58 ), ExtResource( 53 ), ExtResource( 39 ), ExtResource( 67 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "pulse",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 22 ), ExtResource( 31 ), ExtResource( 18 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 25 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "sell",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 49 ), ExtResource( 76 ), ExtResource( 70 ), ExtResource( 64 ), ExtResource( 70 ), ExtResource( 76 ), ExtResource( 49 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "repair",
+"speed": 26.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 54 ), ExtResource( 47 ), ExtResource( 51 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "deploy",
+"speed": 15.0
+} ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Turn Off"
+tracks/0/type = "value"
+tracks/0/path = NodePath("deactive:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../radar_off:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Turn On"
+tracks/0/type = "value"
+tracks/0/path = NodePath("activate:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../radar_off:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 13
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_bottom = -5
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 10
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_char = -1
+extra_spacing_space = 2
+font_data = ExtResource( 7 )
+
+[sub_resource type="Animation" id=6]
+length = 20.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("whitepx:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 20 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ImageTexture" id=7]
+
+[sub_resource type="InputEventAction" id=8]
+action = "pause"
+
+[sub_resource type="ShortCut" id=9]
+shortcut = SubResource( 8 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 14
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_char = -1
+extra_spacing_space = 2
+font_data = ExtResource( 7 )
+
+[sub_resource type="Animation" id=11]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 2.8, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="HUD" type="CanvasLayer"]
+layer = 0
+script = ExtResource( 3 )
+
+[node name="BlackBack" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 75.6674, 209.922 )
+scale = Vector2( 143.362, 371.422 )
+texture = ExtResource( 13 )
+
+[node name="Cursor" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1089.49, 145.618 )
+scale = Vector2( 1, 1 )
+z_index = 6
+z_as_relative = false
+frames = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Units" type="VBoxContainer" parent="."]
+margin_left = 63.0
+margin_top = 212.0
+margin_right = 113.0
+margin_bottom = 805.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Infantry" parent="Units" instance=ExtResource( 9 )]
+visible = false
+requirements = PoolStringArray( "TrainingCamp" )
+limit = 5
+
+[node name="Drone" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 100 )
+object = "Drone"
+requirements = PoolStringArray( "BreedingPit" )
+limit = 5
+radar_name = "Drone"
+faction = "alien"
+
+[node name="Engineer" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 93 )
+object = "Engineer"
+requirements = PoolStringArray( "TrainingCamp" )
+limit = 5
+cost = 500
+radar_name = "Engineer"
+
+[node name="Saboteur" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 112 )
+object = "Saboteur"
+requirements = PoolStringArray( "BreedingPit" )
+limit = 5
+cost = 500
+radar_name = "Saboteur"
+faction = "alien"
+
+[node name="JetpackExplorer" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 98 )
+object = "JetpackExplorer"
+requirements = PoolStringArray( "TrainingCamp", "TechnologyCentre" )
+cost = 600
+radar_name = "Jetpack Explorer"
+
+[node name="Viper" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 103 )
+object = "Viper"
+requirements = PoolStringArray( "BreedingPit", "ExperimentLab" )
+cost = 600
+radar_name = "Viper Attack"
+faction = "alien"
+
+[node name="CrystalMiner" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 94 )
+object = "CrystalMiner"
+requirements = PoolStringArray( "EagleCommandBase" )
+cost = 1400
+radar_name = "Crystal Miner"
+
+[node name="CrystalExtractor" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 101 )
+object = "CrystalExtractor"
+requirements = PoolStringArray( "AlienMothership" )
+cost = 1400
+radar_name = "Crystal Extractor"
+faction = "alien"
+
+[node name="Trike" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 88 )
+object = "Trike"
+requirements = PoolStringArray( "VehicleFactory" )
+limit = 5
+cost = 600
+radar_name = "Trike"
+
+[node name="Speeder" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 107 )
+object = "Speeder"
+requirements = PoolStringArray( "BattleFoundry" )
+limit = 5
+cost = 600
+radar_name = "Speeder"
+faction = "alien"
+
+[node name="ClawTank" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 90 )
+object = "ClawTank"
+requirements = PoolStringArray( "VehicleFactory", "RadarStation" )
+limit = 5
+cost = 1200
+radar_name = "Clawtank Ambush"
+
+[node name="DragonCruiser" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 113 )
+object = "DragonCruiser"
+requirements = PoolStringArray( "BattleFoundry", "SonarStation" )
+limit = 5
+cost = 1200
+radar_name = "Dragon Cruiser"
+faction = "alien"
+
+[node name="AstroFighter" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 99 )
+object = "AstroFighter"
+requirements = PoolStringArray( "RadarStation" )
+cost = 1200
+radar_name = "Astro Fighter"
+
+[node name="StrikeFighter" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 116 )
+object = "StrikeFighter"
+requirements = PoolStringArray( "SonarStation" )
+cost = 1200
+radar_name = "Strike Fighter"
+faction = "alien"
+
+[node name="ReconDropship" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 89 )
+object = "ReconDropship"
+requirements = PoolStringArray( "RadarStation", "TechnologyCentre" )
+limit = 2
+cost = 1000
+radar_name = "Recon Dropship"
+
+[node name="HyperCarrier" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 119 )
+object = "HyperCarrier"
+requirements = PoolStringArray( "SonarStation", "ExperimentLab" )
+limit = 2
+cost = 1000
+radar_name = "Hyper Carrier"
+faction = "alien"
+
+[node name="EmPulseCannon" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 109 )
+type = "superweapon"
+object = "EmPulseCannon"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant", "TrainingCamp", "VehicleFactory", "RadarStation", "TechnologyCentre", "SatelliteUplink" )
+limit = 2
+cost = 3000
+radar_name = "EM Pulse Cannon"
+
+[node name="4T2IonDisruptor" parent="Units" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 106 )
+type = "superweapon"
+object = "4T2IonDisruptor"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator", "BreedingPit", "BattleFoundry", "SonarStation", "ExperimentLab", "OrbitalUplink" )
+limit = 2
+cost = 3000
+radar_name = "4T2 Ion Disruptor"
+faction = "alien"
+
+[node name="Buildings" type="VBoxContainer" parent="."]
+margin_left = 8.0
+margin_top = 212.0
+margin_right = 58.0
+margin_bottom = 823.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PowerPlant" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 85 )
+type = "building"
+object = "PowerPlant"
+requirements = PoolStringArray( "EagleCommandBase" )
+limit = 8
+cost = 800
+radar_name = "Power Plant"
+
+[node name="EnergyGenerator" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 96 )
+type = "building"
+object = "EnergyGenerator"
+requirements = PoolStringArray( "AlienMothership" )
+limit = 8
+cost = 800
+radar_name = "Energy Generator"
+faction = "alien"
+
+[node name="TrainingCamp" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 86 )
+type = "building"
+object = "TrainingCamp"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant" )
+limit = 2
+cost = 500
+radar_name = "Training Camp"
+
+[node name="BreedingPit" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 110 )
+type = "building"
+object = "BreedingPit"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator" )
+limit = 2
+cost = 500
+radar_name = "Breeding Pit"
+faction = "alien"
+
+[node name="DefenceStation" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 83 )
+type = "building"
+object = "DefenceStation"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant", "TrainingCamp" )
+limit = 12
+cost = 1500
+radar_name = "Defence Station"
+
+[node name="AssaultTurret" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 105 )
+type = "building"
+object = "AssaultTurret"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator", "BreedingPit" )
+limit = 12
+cost = 1500
+radar_name = "Assault Turret"
+faction = "alien"
+
+[node name="VehicleFactory" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 97 )
+type = "building"
+object = "VehicleFactory"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant", "TrainingCamp" )
+limit = 2
+cost = 2000
+radar_name = "Vehicle Factory"
+
+[node name="BattleFoundry" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 115 )
+type = "building"
+object = "BattleFoundry"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator", "BreedingPit" )
+limit = 2
+cost = 2000
+radar_name = "Battle Foundry"
+faction = "alien"
+
+[node name="RadarStation" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+margin_top = 30.0
+margin_bottom = 60.0
+texture = ExtResource( 87 )
+type = "building"
+object = "RadarStation"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant", "TrainingCamp" )
+limit = 1
+cost = 1000
+radar_name = "Radar Station"
+
+[node name="SonarStation" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+margin_top = 30.0
+margin_bottom = 60.0
+texture = ExtResource( 108 )
+type = "building"
+object = "SonarStation"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator", "BreedingPit" )
+limit = 1
+cost = 1000
+radar_name = "Sonar Station"
+faction = "alien"
+
+[node name="TechnologyCentre" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 84 )
+type = "building"
+object = "TechnologyCentre"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant", "RadarStation", "VehicleFactory" )
+limit = 1
+cost = 2000
+radar_name = "Technology Centre"
+
+[node name="ExperimentLab" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 104 )
+type = "building"
+object = "ExperimentLab"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator", "SonarStation", "BattleFoundry" )
+limit = 1
+cost = 2000
+radar_name = "Experiment Lab"
+faction = "alien"
+
+[node name="SatelliteUplink" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 82 )
+type = "building"
+object = "SatelliteUplink"
+requirements = PoolStringArray( "EagleCommandBase", "PowerPlant", "RadarStation", "TechnologyCentre" )
+limit = 5
+cost = 1500
+radar_name = "Satellite Uplink"
+
+[node name="OrbitalUplink" parent="Buildings" instance=ExtResource( 9 )]
+visible = false
+texture = ExtResource( 120 )
+type = "building"
+object = "OrbitalUplink"
+requirements = PoolStringArray( "AlienMothership", "EnergyGenerator", "SonarStation", "ExperimentLab" )
+limit = 5
+cost = 1500
+radar_name = "OrbitalUplink"
+faction = "alien"
+
+[node name="OutOfBounds" type="Panel" parent="."]
+margin_left = 4.0
+margin_right = 128.0
+margin_bottom = 212.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OutOfBounds2" type="Panel" parent="."]
+margin_left = 4.0
+margin_top = 391.0
+margin_right = 118.0
+margin_bottom = 447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PowerBar" type="Control" parent="."]
+margin_left = 135.0
+margin_top = 391.0
+margin_right = 175.0
+margin_bottom = 431.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Green" type="Sprite" parent="PowerBar"]
+modulate = Color( 0.101961, 1, 0, 1 )
+position = Vector2( 0, 20.5 )
+scale = Vector2( 15, -41 )
+texture = ExtResource( 13 )
+
+[node name="Yellow" type="Sprite" parent="PowerBar"]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 0, 20.5 )
+scale = Vector2( 15, -41 )
+texture = ExtResource( 13 )
+
+[node name="RadarBack" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+show_behind_parent = true
+position = Vector2( 15, 40 )
+scale = Vector2( 120, 120 )
+texture = ExtResource( 95 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 525, 204, 1, 1 )
+
+[node name="Radar" type="Node2D" parent="."]
+position = Vector2( 75, 100 )
+scale = Vector2( 0.04, 0.04 )
+
+[node name="RadarTiles" type="TileMap" parent="Radar"]
+tile_set = ExtResource( 16 )
+cell_size = Vector2( 96, 48 )
+format = 1
+
+[node name="Blips" type="Node2D" parent="Radar"]
+
+[node name="CameraBlip" type="Sprite" parent="Radar/Blips"]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( -1461.6, 895.724 )
+scale = Vector2( 24, 24 )
+texture = ExtResource( 111 )
+
+[node name="RadarShroud" type="TileMap" parent="Radar"]
+tile_set = ExtResource( 6 )
+cell_size = Vector2( 96, 48 )
+format = 1
+
+[node name="Fadar" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 74.869, 100.102 )
+scale = Vector2( 131.727, 131.727 )
+texture = ExtResource( 13 )
+
+[node name="activate" type="AudioStreamPlayer" parent="Fadar"]
+stream = ExtResource( 1 )
+
+[node name="deactive" type="AudioStreamPlayer" parent="Fadar"]
+stream = ExtResource( 114 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fadar"]
+"anims/Turn Off" = SubResource( 2 )
+"anims/Turn On" = SubResource( 3 )
+
+[node name="radar_off" type="Sprite" parent="."]
+position = Vector2( 74.869, 100.102 )
+texture = ExtResource( 91 )
+
+[node name="RadarNames" type="Sprite" parent="."]
+visible = false
+position = Vector2( 74.869, 100.102 )
+texture = ExtResource( 14 )
+
+[node name="Name" type="Label" parent="RadarNames"]
+margin_left = -56.0
+margin_top = -24.0
+margin_right = 56.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Price" type="Label" parent="RadarNames"]
+margin_left = -63.0
+margin_top = 40.0
+margin_right = 64.0
+margin_bottom = 55.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 0.941176, 0, 1 )
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="whitepx" type="Sprite" parent="RadarNames"]
+modulate = Color( 1, 1, 1, 0 )
+scale = Vector2( 130, 130 )
+texture = ExtResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RadarNames"]
+anims/flash = SubResource( 6 )
+
+[node name="Hud" type="Sprite" parent="."]
+position = Vector2( 300, 200 )
+z_as_relative = false
+texture = ExtResource( 12 )
+
+[node name="Overlays" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="alien" type="Sprite" parent="Overlays"]
+visible = false
+position = Vector2( 300, 200 )
+texture = ExtResource( 92 )
+
+[node name="neither" type="Sprite" parent="Overlays"]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 300, 200 )
+texture = ExtResource( 92 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnitDown" type="TextureButton" parent="Control"]
+margin_left = 91.0
+margin_top = 193.856
+margin_right = 111.0
+margin_bottom = 213.856
+disabled = true
+action_mode = 0
+texture_normal = ExtResource( 117 )
+texture_pressed = ExtResource( 117 )
+texture_hover = ExtResource( 117 )
+texture_disabled = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnitUp" type="TextureButton" parent="Control"]
+margin_left = 91.0
+margin_top = 179.039
+margin_right = 111.0
+margin_bottom = 199.039
+disabled = true
+action_mode = 0
+texture_normal = ExtResource( 118 )
+texture_pressed = ExtResource( 118 )
+texture_hover = ExtResource( 118 )
+texture_disabled = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BuildingDown" type="TextureButton" parent="Control"]
+margin_left = 36.0
+margin_top = 193.856
+margin_right = 56.0
+margin_bottom = 213.856
+disabled = true
+action_mode = 0
+texture_normal = ExtResource( 117 )
+texture_pressed = ExtResource( 117 )
+texture_hover = ExtResource( 117 )
+texture_disabled = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BuildingUp" type="TextureButton" parent="Control"]
+margin_left = 36.0
+margin_top = 179.039
+margin_right = 56.0
+margin_bottom = 199.039
+disabled = true
+action_mode = 0
+texture_normal = ExtResource( 118 )
+texture_pressed = ExtResource( 118 )
+texture_hover = ExtResource( 118 )
+texture_disabled = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Money" type="Label" parent="."]
+margin_left = -46.0
+margin_top = 4.0
+margin_right = 154.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 11 )
+text = "$2000"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sell" type="Button" parent="."]
+margin_left = 89.0
+margin_top = 3.0
+margin_right = 104.0
+margin_bottom = 25.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Repair" type="Button" parent="."]
+margin_left = 106.0
+margin_top = 3.0
+margin_right = 148.0
+margin_bottom = 25.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="Button" parent="."]
+margin_left = 3.0
+margin_top = -5.0
+margin_right = 17.0
+margin_bottom = 15.0
+focus_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 9 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 154.121
+margin_top = 6.14143
+margin_right = 250.121
+margin_bottom = 54.1414
+text = "FPS: 60"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+margin_left = 152.0
+margin_top = 260.0
+margin_right = 601.0
+margin_bottom = 398.0
+custom_fonts/font = SubResource( 10 )
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="Text"]
+one_shot = true
+
+[node name="WarningSound" type="AudioStreamPlayer" parent="Text"]
+stream = ExtResource( 102 )
+
+[node name="fadeout" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 300, 200 )
+scale = Vector2( 600, 400 )
+texture = ExtResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="fadeout"]
+autoplay = "fade"
+anims/fade = SubResource( 11 )
+anims/fade2 = SubResource( 12 )
+
+[node name="PauseUI" parent="." instance=ExtResource( 8 )]
+
+[node name="SkipTut" type="Label" parent="."]
+visible = false
+margin_left = 512.341
+margin_top = 4.49601
+margin_right = 596.341
+margin_bottom = 19.496
+custom_fonts/font = ExtResource( 11 )
+text = "Space to skip"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Control/UnitDown" to="." method="_on_UnitDown_pressed"]
+[connection signal="pressed" from="Control/UnitUp" to="." method="_on_UnitUp_pressed"]
+[connection signal="pressed" from="Control/BuildingDown" to="." method="_on_BuildingDown_pressed"]
+[connection signal="pressed" from="Control/BuildingUp" to="." method="_on_BuildingUp_pressed"]
+[connection signal="timeout" from="Text/Timer" to="." method="_on_Timer_timeout"]
